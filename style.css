@@ -1,140 +1,164 @@
-body { 
-    background: url(img/background.png);
-   
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  background: url(img/background.png) center no-repeat;
 }
-#myContainer{  
-    position: absolute;
-    background:url(img/login_background.png);
-    width: 100%;
-    height: 420px;
+
+.content {
+  padding: 100px 0px;
+  margin: auto 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.form-background{    
-    position: absolute;
-    top: 25%;
-    left: 20%;
-    width: 60%;
-    height: 60%;
-  }
-  .no-account{
-    float: left;
-    width: 48%;
-    height: 300px;  
-  }
-  .have-account{
-    float: right;
-    width: 48%;
-    height: 300px;
-  }
-  .no-account-content{
-      margin-left: 10%;
-  } 
-  .have-account-content{
-    margin-left: 10%;
-  }
-  h2, p{
-    min-width: 50%;
-    color: rgba(215, 225, 230, 0.959);
-  }
-  #sign_up{
-    max-width: 50%;
-    margin-left:10%;
-  }
-  #sign_up:hover{
-    background: rgb(16, 160, 185);
-    border-radius: 25px;
-    }
-  #login{
-    max-width: 50%;
-    margin-left:10%;
-  }
-  #login:hover{
-    background: rgb(16, 160, 185);
-    border-radius: 25px;    
+
+.content__items {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 920px;
+  height: 420px;
+  background: url(img/login_background.png) no-repeat;
 }
-#myAnimation{
-    background:url(img/bddg.png);
-    position: absolute;
-    width: 48%;
-    height: 460px;
-    top: -5.2%;
-    bottom: 50%;
-    left: 50%;
+
+.content__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  padding: 50px 20px;
 }
-#myAnimationGoingRight-content {
-    margin: 20px;
-    height: 280px;
-  }
+
+.content__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: rgba(215, 225, 230, 0.959);
+}
+
+.content__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: rgba(215, 225, 230, 0.959);
+}
+
+.content__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#myAnimation {
+  position: absolute;
+  top: -20px;
+  background: #fff;
+  left: 50%;
+  background: url(img/bddg.png);
+  width: 48%;
+  height: 460px;
+  bottom: 50%;
+  left: 50%;
+}
+
+#sign_up:hover {
+  background: #10a0b9;
+  border-radius: 25px;
+}
+
+#login:hover {
+  background: #10a0b9;
+  border-radius: 25px;
+}
+
+#form1, #form2 {
+  margin: 20px 30px;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 0 50px 0;
+}
+.logo h2 {
+  margin: 0;
+}
+
+.name_logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.name_logo h4 {
+  margin: 0;
+}
+
+.name_input {
+  border: none;
+}
+
+.email_logo2 {
+  padding: 20px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.email_logo2 h4 {
+  margin: 0;
+}
+
+.email_input {
+  border: none;
+}
+
+.lock_logo2 {
+  padding: 20px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.lock_logo2 h4 {
+  margin: 0;
+}
+
+.password_input {
+  border: none;
+}
+
 #myAnimationGoingLeft-content {
-    display: none;
-    margin: 20px;
-    height: 380px;
-  }
-.logo{
-    position: absolute;
-    top: 20px;
-    right: 10%;
+  display: none;
 }
-.color{
-    color: red;
-}
-.email_logo{
-    position: absolute;
-    top: 100px;
-    right: 10%;
-}
-.email_input{
-    width: 100%;
-    border-style: none;
-}
-.lock_logo{
-    position: absolute;
-    top: 180px;
-    right: 10%;
-}
-.password_input{
-    width: 100%;
-    border-style: none;
-}
-.login_buton_two{
-    max-width: 50%;
-    float: left;  
-}
-.forgot{
-    max-width: 100%;
-    float: right;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 14px;
-    text-decoration: unset;  
-}
-.name_logo{
-    position: absolute;
-    top: 100px;
-    right: 10%;
-}
-.name_input{
-    width: 100%;
-    border-style: none;
-}
-.email_logo2{
-    position: absolute;
-    top: 180px;
-    right: 10%;
-}
-.lock_logo2{
-    position: absolute;
-    top: 280px;
-    right: 10%;
-}
-
-
-button {
-    background: none;
-    border: none;
-    outline: none;
-    text-decoration: underline;
-    color: blue;
-    cursor: pointer;
-  }
-  button:hover {
-    color: lightblue;
-  }

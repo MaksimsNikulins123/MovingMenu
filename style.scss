@@ -1,0 +1,122 @@
+.container{
+    display:flex;
+    justify-content: center;
+    width: 100%;
+    background: url(img/background.png) center no-repeat;
+}
+.content{
+    
+    padding: 100px 0px;
+    margin: auto 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.content__items{
+    position: relative;
+    display: flex;
+    width: 100%;
+    max-width: 920px;
+    height: 420px;
+    background: url(img/login_background.png) no-repeat;
+ 
+}
+.content__item{
+    
+    flex: 0 1 50%;
+    padding: 50px 20px;
+    
+}
+.content__title{
+    display: flex;
+    justify-content: center;
+    color: rgba(215, 225, 230, 0.959);
+}
+.content__text{
+    display: flex;
+    justify-content: center;
+    color: rgba(215, 225, 230, 0.959);
+}
+.content__button{
+    display: flex;
+    justify-content: center;
+}
+#myAnimation{
+    position: absolute;
+    top: -20px;
+    background: #fff;
+    // height: 100%;
+    left: 50%;
+    // top: 10%;
+    // bottom: 10%;
+    background: url(img/bddg.png);
+    width: 48%;
+    height: 460px;
+    // top: -5.2%;
+    bottom: 50%;
+    left: 50%;
+}
+#sign_up:hover{
+    background: rgb(16, 160, 185);
+    border-radius: 25px;
+    }
+#login:hover{
+    background: rgb(16, 160, 185);
+    border-radius: 25px;
+    }
+#form1, #form2 {
+    margin: 20px 30px 
+}
+.logo{
+    display: flex;
+    justify-content: space-between;
+    padding:  0 0 50px 0 ;
+    h2{
+        margin: 0;
+    }
+}
+.name_logo{
+    
+    display: flex;
+    justify-content: space-between;
+    h4{
+        margin: 0;
+    }
+}
+.name_input {
+    border: none;
+}
+.email_logo2 {
+    padding: 20px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    h4{
+        margin: 0;
+    }
+}
+.email_input{
+    border: none;
+}
+.lock_logo2{
+    padding: 20px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    h4{
+        margin: 0;
+    }
+}
+.password_input{
+    border: none;
+}
+#myAnimationGoingLeft-content{
+    display: none;
+}
+// #myAnimation {
+//         background: url(img/bddg.png);
+//         // position: absolute;
+//         width: 48%;
+//         height: 460px;
+//         top: -5.2%;
+//         bottom: 50%;
+//         left: 50%;
+//     }
